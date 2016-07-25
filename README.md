@@ -10,6 +10,7 @@ Check out source code from github.
 
     $ git clone https://github.com/vietdt/buildout.extendssubs.git
     $ cd buildout.extendssubs/
+    $ python bootstrap.py
     
 Update buildout.cfg to list the package directory as a develop egg to be built.
 
