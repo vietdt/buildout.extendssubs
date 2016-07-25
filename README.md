@@ -17,11 +17,11 @@ Update buildout.cfg to list the package directory as a develop egg to be built.
     develop = .
     parts =
     
-It's a bit tricky and run the buildout once with the develop egg defined but without the extension option. This is because extensions are loaded before the buildout creates develop eggs. We needed to use a separate buildout run to create the develop egg.
+It's a bit tricky when running the buildout once with the develop egg defined but without the extension option. This is because extensions are loaded before the buildout creates develop eggs. We needed to use a separate buildout run to create the develop egg.
 
     $ ./bin/buildout -v
     
-Now we can add the ``extensions`` and ``extends-subs`` options. Normally, when eggs are loaded from the network (TODO), we wouldn’t need to do the previous step.
+Now we can add the ``extensions`` and ``extends-subs`` options. Normally, when eggs are loaded from the network (TODO), we wouldn’t need the previous step.
 
     [buildout]
     develop = .
